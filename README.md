@@ -5,11 +5,11 @@ Note: <code><i><small> php_version is optional, default value is 8.2 (will choos
 <hr />
 <b>FOR LINUX:</b>
 
-- Copy <code>start.sh</code> to you project folder name
+- Copy <code>docker.sh</code> to you project folder name
 
 - Open terminal on your root directory
 
-- Type <code>./start.sh</code> <code>:project_name</code> <code>:port_number</code><code>:php_version</code>
+- Type <code>./docker.sh</code> <code>:project_name</code> <code>:port_number</code><code>:php_version</code>
 
 <hr />
 <code>Idea by: Pramesh Dhakal</code>
