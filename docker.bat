@@ -19,6 +19,9 @@ if "%php_version%"=="" (
     SET php_version=%3 
 )
 
+SET path=%CD%\%project_name%
+if not exist "%path%" mkdir "%path%"
+
 (
 echo version: '3.1'
 echo services:
@@ -51,6 +54,8 @@ echo       MYSQL_ROOT_PASSWORD: toor
 echo       MYSQL_USER: %project_name%
 echo       MYSQL_PASSWORD: %project_name%
 echo       MYSQL_DATABASE: %project_name%
-) > docker-compose.yml
+) > "%path%\docker-compose.yml"
 
-echo Docker Compose file created for %project_name% with port %port_num           
+docker-compose up -db
+
+echo Docker Compose file created with %project_name% folder for %project_name% project with port %port_num%
