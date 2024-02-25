@@ -15,7 +15,9 @@ Note: <code><i><small> php_version is optional, default value is 8.2 (will choos
 <b>FOR LINUX:</b>
 
 - Copy <code>docker.sh</code> to you project folder name
-
+- Run command to make file executable as:
+    <code>chmod +x docker.sh</code>
+    
 - Open terminal on your root directory
 
 - Type <code>./docker.sh</code> <code>:project_name</code> <code>:port_number</code><code>:php_version</code>
